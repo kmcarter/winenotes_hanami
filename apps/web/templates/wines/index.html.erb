@@ -1,0 +1,16 @@
+<h1>Wines Listing</h1>
+
+<div id="wines">
+  <% if wines.any? %>
+    <% wines.each do |wine | %>
+      <div class="wine">
+        <h3><%= wine.name %></h3>
+        <p><%= wine.varietal %></p>
+        <p><%= wine.year %></p>
+        <p><%= wine.vinyard %></p>
+      </div>
+    <% end %>
+  <% else %>
+    <p class="placeholder">There are no wines yet.</p>
+  <% end %>
+</div>
