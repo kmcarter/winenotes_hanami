@@ -1,0 +1,27 @@
+<h2>Add Wine</h2>
+
+<%= form_for :wine, '/wines' do
+  div class: 'input' do
+    label :name
+    text_field :name
+  end
+
+  div class: 'input' do
+    label :varietal
+    text_field :varietal
+  end
+
+  div class: 'input' do
+    label :year
+    text_field :year
+  end
+
+  div class: 'input' do
+    label :vinyard
+    text_field :vinyard
+  end
+
+  div class: 'controls' do
+    submit 'Create Wine'
+  end
+end %>
