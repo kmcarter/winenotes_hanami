@@ -13,7 +13,7 @@ feature 'Listing all wines' do
     visit '/wines'
 
     within '#wines' do
-      expect(page).to have_css('.project', count: 3)
+      expect(page).to have_css('.wine', count: 3)
     end
   end
 end

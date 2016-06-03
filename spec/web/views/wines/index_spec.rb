@@ -21,6 +21,7 @@ RSpec.describe Web::Views::Wines::Index do
     let(:wine1) { Wine.new(name: 'Test Wine 1') }
     let(:wine2) { Wine.new(name: 'Test Wine 2') }
     let(:wine3) { Wine.new(name: 'Test Wine 3') }
+    let(:exposures) { Hash[wines: [wine1, wine2, wine3]] }
 
     it 'lists all wines' do
       expect(rendered.scan(/class='wine'/).count).to eq(3)
